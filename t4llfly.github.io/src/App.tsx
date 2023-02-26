@@ -10,10 +10,11 @@ function App() {
     flexWrap="wrap"
     width="100%"
     bgColor="#222222"
-    py="432.5"
+    py="412.5"
     mb="0"
     bgRepeat="no-repeat"
     justifyContent="center"
+    flexDirection="column"
     >
       <Text fontSize={64} fontFamily="sans-serif" letterSpacing="wide" fontWeight="800" textColor="white">TALLFLY</Text>
       <ButtonGroup variant='solid' spacing='3'>
