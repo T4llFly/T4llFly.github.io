@@ -1,6 +1,7 @@
 import './App.css';
 import { Text } from "@chakra-ui/react"
 import { Box, Button, ButtonGroup } from '@chakra-ui/react'
+import { FaGithub, FaCat, FaVk, FaTelegramPlane, FaEyeSlash } from 'react-icons/fa'
 
 function App() {
   return (
@@ -18,11 +19,11 @@ function App() {
     >
       <Text fontSize={64} fontFamily="sans-serif" letterSpacing="wide" fontWeight="800" textColor="white">TALLFLY</Text>
       <ButtonGroup variant='solid' spacing='3'>
-          <Button colorScheme='telegram' onClick={Telegram}>Telegram</Button>
-          <Button colorScheme="messenger" onClick={VK}>VK</Button>
-          <Button colorScheme='whiteAlpha' onClick={GitHub}>GitHub</Button>
-          <Button colorScheme="orange" onClick={Catangens}>Catangens</Button>
-          <Button colorScheme="blackAlpha" onClick={Rickroll}>TOP SECRET</Button>
+          <Button colorScheme='telegram' leftIcon={<FaTelegramPlane />}onClick={Telegram}>Telegram</Button>
+          <Button colorScheme="messenger" leftIcon={<FaVk />} onClick={VK}>VK</Button>
+          <Button colorScheme='whiteAlpha' leftIcon={<FaGithub />} onClick={GitHub}>GitHub</Button>
+          <Button colorScheme="orange" leftIcon={<FaCat />} onClick={Catangens}>Catangens</Button>
+          <Button colorScheme="blackAlpha" leftIcon={<FaEyeSlash />} onClick={Rickroll}>TOP SECRET</Button>
       </ButtonGroup>
     </Box>
 
